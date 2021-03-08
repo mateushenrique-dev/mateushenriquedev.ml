@@ -26,14 +26,14 @@
     <main class="contato container">
         <div class="contato-field">
             <form action="success.html" method="POST" name="Contato" netlify>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email">
-                <label for="telefone">Telefone</label>
-                <input type="text" name="telefone" id="telefone">
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+                <label for="nome" required>Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email" required>E-mail</label>
+                <input type="text" name="email" id="email" required>
+                <label for="telefone" required>Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+                <label for="mensagem" required>Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
                 <button class="btn-form">Enviar</button>
             </form>
             <div class="rede-sociais-contato">
