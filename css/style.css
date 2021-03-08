@@ -55,7 +55,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .menu ul {
@@ -233,7 +233,7 @@ body header .menu li:first-child a{
 
 .introducao-sobre {
     background: linear-gradient(95.9deg, #9455F2 0%, #AB73FF 100%);
-    margin-top: 30px;
+    margin-top: 25px;
     height: 463px;
 }
 .introducao-sobre p {
