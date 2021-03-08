@@ -204,7 +204,7 @@ body header .menu li:first-child a{
 .direitos-autorais {
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: space-between;
+    justify-content: space-between;    
     color: #fff;
 }
 
@@ -530,7 +530,7 @@ form label {
     margin-top: 20px;
 }
 
-form input[type="text"], form textarea {
+form input, form textarea {
     width: 480px;
     height: 40px;
     border-radius: 10px;
@@ -628,10 +628,6 @@ form button {
         display: none;
     }
 
-    .introducao-main p span::before {
-        display: none;
-    }
-
     .introducao-main {
         margin: 60px 0;
     }
@@ -651,7 +647,6 @@ form button {
     .itens-footer {
         justify-content: center;
     }
-
     /* Sobre */
 
     .introducao-sobre h1 {
