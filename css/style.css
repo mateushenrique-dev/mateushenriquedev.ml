@@ -782,3 +782,29 @@ form button {
     
 
 }
+
+/* Página de Sucesso */
+
+body.sucesso-body {
+    background: #8844EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.sucesso {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    background: #fff;
+}
+
+.sucesso h1 span {
+    color: #4EE083;
+}
+.sucesso a {
+    color: #000;
+}
