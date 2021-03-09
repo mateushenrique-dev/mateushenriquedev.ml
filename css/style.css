@@ -31,7 +31,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 1180px;
     justify-content: center;
 }
 
@@ -86,7 +86,7 @@ body header .menu li:first-child a{
 /* Introdução */
 
 .introducao-main {
-    margin: 120px 0;
+    margin: 40px 0;
 }
 
 .introducao-main p {
@@ -163,7 +163,7 @@ body header .menu li:first-child a{
 .projetos-main-imagem {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 .projetos-main-imagem img{
@@ -214,21 +214,6 @@ body header .menu li:first-child a{
 
 /* ------------------------------- SOBRE -------------------------------------- */
 
-
-/* Header */
-
-.header-sub-paginas {
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    align-items: end;
-}
-
-.header-sub-paginas a {
-    color: var(--cor-fonte);
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
 /* Introducao */
 
 .introducao-sobre {
@@ -269,6 +254,12 @@ body header .menu li:first-child a{
 }
 
 /* Habilidades */
+
+.habilidades {
+    display: grid;
+    grid-template-columns: 1100px;
+    justify-content: center;
+}
 
 .habilidades h2 {
     text-align: center;
@@ -571,8 +562,16 @@ form button {
 
 /*------------------------------------ RESPONSIVIDADE ------------------------------------*/
 
-@media (max-width: 1117px) {
+@media (max-width: 1200px) {
     /* Home */
+
+    .habilidades {
+        grid-template-columns: 800px;
+    }
+
+    .container {
+        grid-template-columns: 800px;
+    }
 
     .projetos-main h2::after, .projetos-main h2::before {
         width: 100px;
@@ -618,7 +617,35 @@ form button {
 
 }
 
+@media (max-width: 821px) {
+    .habilidades {
+        grid-template-columns: 700px;
+    }
+    .container {
+        grid-template-columns: 700px;
+    }
+    .projetos-main-imagem {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .projetos-main h2::before, .projetos-main h2::after {
+        display: none;
+    }
+    .introducao-main {
+        margin: 40px 0;
+    }
+
+}
+
 @media (max-width: 720px) {
+
+    .habilidades {
+        grid-template-columns: 300px;
+    }
+
+    .container {
+        grid-template-columns: 300px;
+    }
 
     .projetos-main-imagem {
         margin-top: 60px;
@@ -629,7 +656,7 @@ form button {
     }
 
     .introducao-main {
-        margin: 60px 0;
+        margin: 40px 0;
     }
 
     .introducao-main h1 {
@@ -657,6 +684,12 @@ form button {
         height: 300px;
     }
 
+    .test {
+        display: grid !important; 
+        grid-template-columns: 1100px !important; 
+        justify-content: center !important; 
+    }
+
     .habilidades p {
         max-width: 300px;
     }
@@ -675,6 +708,7 @@ form button {
 
     .menu {
         justify-content: center;
+        margin-top: 20px;
     }
 
     /* Projetos */
@@ -773,6 +807,11 @@ form button {
 
     .mapa {
         margin: 60px 0;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 25px;
     }
     
 
