@@ -741,7 +741,7 @@ form button {
         font-size: 2.25em;
     }
 
-    form input[type="text"], form textarea {
+    form input, form textarea {
         width: 270px;
         height: 30px;
     }
