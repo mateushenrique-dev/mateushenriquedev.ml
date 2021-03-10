@@ -173,6 +173,7 @@ body header .menu li:first-child a {
   width: 280px;
   height: 1px;
   background: var(--cor-aux);
+  margin-bottom: 10px;
 }
 
 .projetos-main h2::before {
@@ -708,6 +709,12 @@ form button {
   }
 
   .itens-footer {
+    justify-content: center;
+  }
+
+  .direitos-autorais {
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
   }
   /* Sobre */
