@@ -137,6 +137,60 @@ body header .menu li:first-child a {
   margin-right: 5px;
 }
 
+/* Menu Hamburguer */
+
+.hamburguer {
+  display: none;
+}
+
+#menu-hamburguer {
+  opacity: 0;
+}
+.hamburguer label {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburguer span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-principal);
+  transition: 0.25s ease-in-out;
+}
+
+.hamburguer span:nth-child(1) {
+  position: absolute;
+  top: 0;
+}
+
+.hamburguer span:nth-child(2) {
+  position: absolute;
+  top: 8px;
+}
+
+.hamburguer span:nth-child(3) {
+  position: absolute;
+  top: 16px;
+}
+
+#menu-hamburguer:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#menu-hamburguer:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-hamburguer:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
 .introducao-main h1 {
   font-size: 4.5rem;
   max-width: 700px;
@@ -675,6 +729,40 @@ form button {
 }
 
 @media (max-width: 720px) {
+
+  .hamburguer {
+    display: block;
+  }
+
+  .menu {
+    justify-content: flex-start;
+  }
+
+  .menu > a {
+    padding: 20px 0 0 20px;
+  }
+  
+  .menu ul {
+    display: none;
+    margin-top: 40px;
+    animation: menuhamburguer 0.5s forwards;
+  }
+
+  @keyframes menuhamburguer {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    top {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu ul.ativo {
+    display: flex;
+  }
+
   .habilidades {
     grid-template-columns: 300px;
   }
@@ -740,18 +828,6 @@ form button {
   .skills {
     grid-template-columns: repeat(auto-fit, minmax(80px, auto));
     padding: 20px;
-  }
-
-  .menu a {
-    color: var(--cor-fonte);
-    text-decoration: none;
-    font-size: 1.125rem;
-    padding: 5px 10px;
-  }
-
-  .menu {
-    justify-content: center;
-    margin-top: 20px;
   }
 
   /* Projetos */
@@ -851,11 +927,6 @@ form button {
   .mapa {
     margin: 60px 0;
   }
-
-  .menu {
-    justify-content: center;
-    margin-top: 25px;
-  }
 }
 
 /* Página de Sucesso */
@@ -883,3 +954,7 @@ body.sucesso-body {
 .sucesso a {
   color: #000;
 }
+
+
+
+
