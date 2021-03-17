@@ -18,6 +18,7 @@ function slideLeft() {
     const isMetade = (sectionTop - windowMetade)
     if (isMetade < 0) {
       section.classList.add('slide')
+    }
   })
   }
   window.addEventListener('scroll', slide)
