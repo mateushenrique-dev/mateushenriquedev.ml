@@ -729,7 +729,6 @@ form button {
 }
 
 @media (max-width: 720px) {
-
   .hamburguer {
     display: block;
   }
@@ -741,7 +740,7 @@ form button {
   .menu > a {
     padding: 20px 0 0 20px;
   }
-  
+
   .menu ul {
     display: none;
     margin-top: 40px;
@@ -955,6 +954,7 @@ body.sucesso-body {
   color: #000;
 }
 
-
-
-
+.this-site a {
+  color: #000;
+  margin-left: 5px;
+}
