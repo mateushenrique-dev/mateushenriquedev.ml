@@ -958,3 +958,14 @@ body.sucesso-body {
   color: #000;
   margin-left: 5px;
 }
+
+.js .js-slide {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.5s;
+}
+
+.js .js-slide.slide {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
