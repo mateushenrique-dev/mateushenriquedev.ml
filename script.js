@@ -12,6 +12,7 @@ menuHamburguer()
 function slideLeft() {
   const sections = document.querySelectorAll('.js-slide');
   const windowMetade = window.innerHeight * 0.6
+  sections[0].classList.add('slide')
   function slide() {
   sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;

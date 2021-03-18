@@ -980,7 +980,7 @@ body.sucesso-body {
   margin-left: 5px;
 }
 
-.js .js-slide {
+.js .js-slide + .js-slide {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: 0.5s;
