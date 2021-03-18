@@ -1,6 +1,6 @@
-<h1>Meu portfólio</h1>
+# Meu portfólio
 
-<img src="img/readme-images/meuportfolio.gif">
+![](img/readme-images/meuportfolio.gif)
 
 > Criei esse meu portfólio para armazenar meus projetos e fazer uma introdução sobre mim.
 
