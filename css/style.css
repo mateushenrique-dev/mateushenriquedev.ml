@@ -743,6 +743,10 @@ form button {
   }
 
   .menu {
+    margin-bottom: 20px;
+  }
+
+  .menu {
     justify-content: flex-start;
   }
 
@@ -754,6 +758,7 @@ form button {
     display: none;
     margin-top: 40px;
     animation: menuhamburguer 0.5s forwards;
+    margin-bottom: 20px;
   }
 
   .menu ul.ativo {
@@ -1002,10 +1007,15 @@ body.sucesso-body {
   }
 }
 
+.menu > a {
+  margin-bottom: 20px;
+}
+
 /* Site-mode */
 
 .mode {
   align-items: start;
+  cursor: pointer;
 }
 
 .site-mode {
@@ -1060,10 +1070,14 @@ body.dark-theme {
 
 .dark-theme h1,
 .dark-theme h2,
-.dark-theme h3,
+.dark-theme a,
+.dark-theme li {
+  color: #8739f9 !important;
+}
+
 .dark-theme p,
-.dark-theme a {
-  color: #fff !important;
+.dark-theme h3 {
+  color: #fff;
 }
 
 .dark-theme #nome-descricao::before,
@@ -1081,11 +1095,7 @@ body.dark-theme {
 }
 
 .dark-theme .btn-call a {
-  background: #8739f9;
-}
-
-.dark-theme .btn-call a:hover {
-  background: var(--cor-destaque);
+  color: #fff !important;
 }
 
 .dark-theme .introducao-sobre {
@@ -1094,6 +1104,23 @@ body.dark-theme {
 
 .dark-theme .introducao-projetos::after,
 .dark-theme .this-site h2::before,
-.dark-theme .this-site h2::after, .this-site::after {
+.dark-theme .this-site h2::after,
+.this-site::after {
   background: #242424;
+}
+
+.dark-theme .menu > ul li:last-child a {
+  color: #fff !important;
+}
+
+.dark-theme .menu li:last-child a {
+  background: #8739f9;
+}
+
+.dark-theme .btn-call a {
+  background: #8739f9;
+}
+
+.dark-theme #nome-descricao {
+  color: #f8e959;
 }

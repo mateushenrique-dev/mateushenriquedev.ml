@@ -25,12 +25,22 @@ function slideLeft() {
 }
 slideLeft()
 
-const modeButton = document.querySelector('.site-mode');
+function darkMode() {
+  const nightModeArmazenado = localStorage.getItem('nightModeArmazenado')
 
-function switchMode() {
-  document.querySelector('.dark-mode').classList.toggle('branco')
-  document.querySelector('.dark-mode').classList.toggle('escuro')
-  document.querySelector('body').classList.toggle('dark-theme')
+  if(nightModeArmazenado) {
+    switchMode()
+  }
+
+  const modeButton = document.querySelector('.site-mode');
+
+  function switchMode() {
+    document.querySelector('.dark-mode').classList.toggle('branco')
+    document.querySelector('.dark-mode').classList.toggle('escuro')
+    document.querySelector('body').classList.toggle('dark-theme')
+    localStorage.setItem('nightModeArmazenado', true)
+  }
+
+  modeButton.addEventListener('click', switchMode)
 }
-
-modeButton.addEventListener('click', switchMode)
+darkMode()
