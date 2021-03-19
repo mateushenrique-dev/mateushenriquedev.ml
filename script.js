@@ -25,16 +25,12 @@ function slideLeft() {
 }
 slideLeft()
 
-let i = 0;
-let message = 'Mateus Henrique Web Designer';
+const modeButton = document.querySelector('.site-mode');
 
-digitando();
-
-function digitando() {
-  if(i < message.length) {
-    document.getElementById('text').innerHTML += message.charAt(i);
-    i++;
-    setTimeout(digitando, 150);
-  }
+function switchMode() {
+  document.querySelector('.dark-mode').classList.toggle('branco')
+  document.querySelector('.dark-mode').classList.toggle('escuro')
+  document.querySelector('body').classList.toggle('dark-theme')
 }
 
+modeButton.addEventListener('click', switchMode)
