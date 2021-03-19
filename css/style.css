@@ -1113,6 +1113,10 @@ body.dark-theme {
   color: #fff !important;
 }
 
+.dark-theme label {
+  color: #fff;
+}
+
 .dark-theme .menu li:last-child a {
   background: #8739f9;
 }
