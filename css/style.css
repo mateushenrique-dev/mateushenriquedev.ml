@@ -1128,3 +1128,12 @@ body.dark-theme {
 .dark-theme #nome-descricao {
   color: #f8e959;
 }
+
+/* Particula */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
