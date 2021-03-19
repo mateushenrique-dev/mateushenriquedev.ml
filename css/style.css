@@ -817,12 +817,6 @@ form button {
     height: 300px;
   }
 
-  .test {
-    display: grid !important;
-    grid-template-columns: 1100px !important;
-    justify-content: center !important;
-  }
-
   .habilidades p {
     max-width: 300px;
   }
@@ -1072,7 +1066,7 @@ body.dark-theme {
 .dark-theme h2,
 .dark-theme a,
 .dark-theme li {
-  color: #8739f9 !important;
+  color: #8739f9;
 }
 
 .dark-theme p,
@@ -1095,7 +1089,11 @@ body.dark-theme {
 }
 
 .dark-theme .btn-call a {
-  color: #fff !important;
+  color: #fff;
+}
+
+.dark-theme .btn-call a:hover {
+  background: ;
 }
 
 .dark-theme .introducao-sobre {
@@ -1110,7 +1108,7 @@ body.dark-theme {
 }
 
 .dark-theme .menu > ul li:last-child a {
-  color: #fff !important;
+  color: #fff;
 }
 
 .dark-theme label {
@@ -1121,12 +1119,20 @@ body.dark-theme {
   background: #8739f9;
 }
 
+.dark-theme #nome-descricao {
+  color: #f8e959;
+}
+
 .dark-theme .btn-call a {
   background: #8739f9;
 }
 
-.dark-theme #nome-descricao {
-  color: #f8e959;
+.dark-theme .btn-call a:hover {
+  background: var(--cor-destaque);
+}
+
+.dark-theme .menu li:last-child a:hover {
+  background: var(--cor-destaque);
 }
 
 /* Particula */
