@@ -1107,7 +1107,7 @@ body.dark-theme {
 .dark-theme .introducao-projetos::after,
 .dark-theme .this-site h2::before,
 .dark-theme .this-site h2::after,
-.this-site::after {
+.dark-theme .this-site::after {
   background: #242424;
 }
 
