@@ -317,7 +317,6 @@ a.menu-ativo {
   background: linear-gradient(95.9deg, #9455f2 0%, #ab73ff 100%);
   margin-top: 25px;
   height: 463px;
-  background: url() no-repeat;
 }
 .introducao-sobre p {
   font-size: 1.125rem;
@@ -818,6 +817,7 @@ form button {
 
   .introducao-sobre {
     height: 300px;
+    background: linear-gradient(95.9deg, #9455f2 0%, #ab73ff 100%);
   }
 
   .habilidades p {
