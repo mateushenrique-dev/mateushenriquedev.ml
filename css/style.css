@@ -317,6 +317,7 @@ a.menu-ativo {
   background: linear-gradient(95.9deg, #9455f2 0%, #ab73ff 100%);
   margin-top: 25px;
   height: 463px;
+  background: url() no-repeat;
 }
 .introducao-sobre p {
   font-size: 1.125rem;
@@ -540,6 +541,14 @@ a.menu-ativo {
   color: var(--cor-destaque);
 }
 
+/* Button See More */
+
+.button-see-more {
+  display: grid;
+  justify-content: center;
+  margin-top: 60px;
+}
+
 /* Esse site */
 
 .this-site {
@@ -550,13 +559,7 @@ a.menu-ativo {
 .this-site h2 {
   text-align: center;
   font-size: 2.25rem;
-  margin-top: 120px;
-}
-
-.this-site h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  margin-top: 120px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -1158,7 +1161,8 @@ body.dark-theme {
 .introducao-sobre,
 form,
 .mapa,
-.rede-sociais-contato, .btn-call {
+.rede-sociais-contato,
+.btn-call {
   position: relative;
   z-index: 100;
 }
