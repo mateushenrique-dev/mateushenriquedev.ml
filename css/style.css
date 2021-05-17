@@ -124,7 +124,7 @@ body header .menu li:first-child a {
 }
 
 .introducao-main p span {
-  color: #4ee083;
+  color: red;
 }
 .introducao-main p span::before {
   content: "";
