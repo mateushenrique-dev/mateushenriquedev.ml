@@ -132,7 +132,7 @@ body header .menu li:first-child a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #4ee083;
+  background: red;
   margin-right: 5px;
 }
 
