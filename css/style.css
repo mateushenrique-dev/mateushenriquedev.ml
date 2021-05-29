@@ -330,6 +330,10 @@ a.menu-ativo {
   color: #fff;
 }
 
+.skills img {
+  max-width: 100px;
+}
+
 .introducao-infos {
   margin-top: 80px;
 }
